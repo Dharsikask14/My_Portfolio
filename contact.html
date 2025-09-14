@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Me</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">MyPortfolio</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="contact-container">
+      <h1>Let's <span>Connect</span></h1>
+      <p>If you'd like to get in touch for a project or just say hi, feel free to message me!</p>
+
+      <form class="contact-form">
+        <input type="text" name="name" placeholder="Your Name" 
+               required pattern="[A-Za-z ]+" 
+               title="Only letters and spaces are allowed." />
+
+        <input type="email" name="email" placeholder="Your Email"
+               required pattern="^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$"
+               title="Enter a valid email like abc@example.com" />
+
+        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MyPortfolio. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
